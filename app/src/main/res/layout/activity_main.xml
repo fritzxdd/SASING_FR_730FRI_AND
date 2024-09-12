@@ -1,0 +1,56 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title for To-Do List -->
+    <TextView
+        android:id="@+id/tv_todo_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To-Do List"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ListView for displaying the to-do list -->
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Image Preview -->
+    <ImageView
+        android:id="@+id/iv_image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <!-- Text Input for To-Do Item -->
+    <EditText
+        android:id="@+id/et_todo_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your task"
+        android:inputType="text" />
+
+    <!-- Image Picker Button -->
+    <Button
+        android:id="@+id/btn_select_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btn_save_todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+
+</LinearLayout>
