@@ -34,10 +34,10 @@ public class ContentFragment extends Fragment {
         headlineTextView = view.findViewById(R.id.headlineTextView);
         contentTextView = view.findViewById(R.id.contentTextView);
         // Set text sizes programmatically
-        headlineTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 24);
-        headlineTextView.setTextColor(Color.BLACK); // Adjust color if needed
-        contentTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
-        contentTextView.setTextColor(Color.DKGRAY); // Adjust color if needed
+        headlineTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 35);
+        headlineTextView.setTextColor(Color.WHITE); // Adjust color if needed
+        contentTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
+        contentTextView.setTextColor(Color.WHITE); // Adjust color if needed
 
         // If arguments were provided, update the content after the view is created
         if (getArguments() != null) {
