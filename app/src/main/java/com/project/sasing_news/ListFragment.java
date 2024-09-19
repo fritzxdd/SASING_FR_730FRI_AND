@@ -59,11 +59,10 @@ public class ListFragment extends Fragment {
                         "Boom’s new line-up will have SEA veteran Chai \"Mushi\" Yee Fung joining in the coaching seat for the new season.",
                 "After falling to Gaimin Gladiators in five previous grand finals, Team Liquid defeated their rivals in the one that mattered the most. Team Liquid have been crowned as this year’s Dota 2 world champions after they triumphed over rivals Gaimin Gladiators, 3-0, in an all-Western Europe showdown in The International 2024 (TI 2024) grand finals at the Royal Arena of Copenhagen, Denmark on Sunday (September 15). This was the most dominant performance by a TI champion ever, as Liquid won every single game they played in the Playoffs and their only losses came during the preliminary Group Stage and Seeding Decider phases. This also marks the third-straight year that the TI grand finals ended in a 3-0 sweep.\n" +
                         "\n" +
-                        "With their victory, Liquid claimed the grand prize of $1.15 million out of the tournament’s $2.56 million prize pool as well as the organisation's second Aegis of Champions to add to their first from TI 2017.."
+                        "With their victory, Liquid claimed the grand prize of $1.15 million out of the tournament’s $2.56 million prize pool as well as the organisation's second Aegis of Champions to add to their first from TI 2017.git."
         };
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(),
-                android.R.layout.simple_list_item_1, headlines);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), R.layout.list_item, R.id.headlineTextView, headlines);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener((parent, view1, position, id) -> {

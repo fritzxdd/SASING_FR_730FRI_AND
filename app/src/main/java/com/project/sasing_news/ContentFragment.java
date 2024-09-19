@@ -1,6 +1,8 @@
 package com.project.sasing_news;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +33,12 @@ public class ContentFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_content, container, false);
         headlineTextView = view.findViewById(R.id.headlineTextView);
         contentTextView = view.findViewById(R.id.contentTextView);
+        // Set text sizes programmatically
+        headlineTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 24);
+        headlineTextView.setTextColor(Color.BLACK); // Adjust color if needed
+        contentTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
+        contentTextView.setTextColor(Color.DKGRAY); // Adjust color if needed
+
         // If arguments were provided, update the content after the view is created
         if (getArguments() != null) {
             String headline = getArguments().getString("headline");
@@ -47,6 +55,7 @@ public class ContentFragment extends Fragment {
         }
     }
 }
+
 
 
 
