@@ -39,8 +39,10 @@ public class MainActivity extends AppCompatActivity implements ListFragment.OnHe
                 .findFragmentById(R.id.contentFragment);
 
         if (contentFragment != null) {
+            // Update the existing fragment in landscape mode
             contentFragment.updateContent(headline, content);
         } else {
+            // In portrait mode, replace the fragment with new content
             ContentFragment newFragment = new ContentFragment();
 
             Bundle args = new Bundle();
@@ -53,6 +55,6 @@ public class MainActivity extends AppCompatActivity implements ListFragment.OnHe
                     .addToBackStack(null)
                     .commit();
         }
-    }
-}
 
+    }
+    }
