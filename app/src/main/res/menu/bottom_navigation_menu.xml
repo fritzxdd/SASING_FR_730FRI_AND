@@ -1,14 +1,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_profile"
+        android:id="@+id/nav_calculator"
     android:icon="@drawable/ic_launcher_foreground"
-    android:title="Profile" />
+    android:title="Calculator" />
     <item
         android:id="@+id/nav_list"
     android:icon="@drawable/ic_launcher_foreground"
     android:title="List" />
     <item
-        android:id="@+id/nav_calculator"
+        android:id="@+id/nav_profile"
     android:icon="@drawable/ic_launcher_foreground"
-    android:title="Calculator" />
+    android:title="Profile" />
 </menu>
