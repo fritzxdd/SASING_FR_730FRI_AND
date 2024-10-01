@@ -10,7 +10,7 @@
         android:id="@+id/profile_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit Profile"
+        android:text="Profile"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginBottom="16dp" />
@@ -29,6 +29,14 @@
         android:layout_height="wrap_content"
         android:hint="Email"
         android:inputType="textEmailAddress" />
+
+    <!-- EditText for Age -->
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number" />
 
     <!-- Radio Group for Gender -->
     <TextView
@@ -54,24 +62,6 @@
             android:layout_height="wrap_content"
             android:text="Female" />
     </RadioGroup>
-
-    <!-- CheckBoxes for Preferences -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Preferences" />
-
-    <CheckBox
-        android:id="@+id/checkbox_newsletter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Subscribe to Newsletter" />
-
-    <CheckBox
-        android:id="@+id/checkbox_promotions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Receive Promotions" />
 
     <!-- Save Button -->
     <Button

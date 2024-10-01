@@ -15,10 +15,10 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        // Set ListFragment as the default fragment when the app opens
+        // Set ProfileFragment as the default fragment when the app opens
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ListFragment()).commit();
-            bottomNavigationView.setSelectedItemId(R.id.nav_profile); // Set List as selected tab
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ProfileFragment()).commit();
+            bottomNavigationView.setSelectedItemId(R.id.nav_profile); // Set Profile as selected tab
         }
 
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
