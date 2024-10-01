@@ -1,0 +1,33 @@
+<!-- res/layout/item_todo.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Horizontal layout for CheckBox and ImageView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- CheckBox with dynamic text -->
+        <CheckBox
+            android:id="@+id/cb_todo_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- ImageView (hidden if no image) -->
+        <ImageView
+            android:id="@+id/iv_todo_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
